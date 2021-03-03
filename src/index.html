@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Chemical-Reactions</title>
+</head>
+<body>
+<div id="wrapper">
+  <div class="point" data-point="INT3D-124">
+    <div class="title"><span>Cookware</span></div>
+    <img src="assets/img/124_cookware_main.jpg" alt="">
+  </div>
+  <div class="point" data-point="INT3D-125">
+    <div class="title"><span>Sunscreen</span></div>
+    <img src="assets/img/125_sunscreen00095.jpg" alt="">
+  </div>
+  <div class="point" data-point="INT3D-126">
+    <div class="title"><span>Fuels</span></div>
+    <img src="assets/img/126_fuel_main.jpg" alt="">
+  </div>
+  <div class="point" data-point="INT3D-127">
+    <div class="title"><span>Industrial Applications</span></div>
+    <img src="assets/img/127_Industrial_App_main.jpg" alt="">
+  </div>
+</div>
+<div id="timeline-wrapper">
+  <button id="closeButton">
+    <span></span>&nbsp;Close
+  </button>
+  <div id="timeline"></div>
+</div>
+<script>
+  if ('serviceWorker' in navigator) {
+    navigator.serviceWorker
+    .register('service-worker.js').then(() => {});
+  }
+</script>
+</body>
+</html>

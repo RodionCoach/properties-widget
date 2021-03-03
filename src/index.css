@@ -1,0 +1,97 @@
+@font-face {
+  font-family: "Tisa-Sans-Pro-Regular";
+  src: url(./assets/fonts/TisaSansPro-Regular.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#wrapper {
+  width: 780px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+#wrapper img {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.point {
+  position: relative;
+  cursor: pointer;
+  display: flex; 
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.title {
+  position: absolute;
+  width: 99.4%;
+  bottom: 1px;
+  padding: 7px 12px;
+  border: 1px solid white;
+  background: #545454;
+  font-size: 20px;
+  font-family: Tisa-Sans-Pro-Regular sans-serif;
+  white-space: nowrap;
+  color: white;
+  transition: all ease 0.4s;
+  text-align: center;
+}
+
+.point:hover .title {
+  transform: scale(1.1);
+  z-index: 1;
+}
+
+#timeline-wrapper {
+  position: absolute;
+  width: 780px;
+  height: 100%;
+  max-height: 455px;
+  background-color: white;
+  top: -30px;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .43);
+  transition: all ease-in-out 0.5s;
+  z-index: 2;
+}
+
+#closeButton {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  -webkit-appearance: none;
+  background: none;
+  border: 0;
+  font-size: 14px;
+  height: 30px;
+  align-items: center;
+  cursor: pointer;
+}
+
+#closeButton:hover {
+  background: #f7f7f7;
+}
+
+#closeButton  span {
+  width: 10px;
+  height: 10px;
+  border-right: 2px solid black;
+  border-top: 2px solid black;
+  transform: rotate(-45deg) translate(-4px, -1px);
+  margin-right: 7px;
+}
+
+#timeline-wrapper.opened {
+  transform: translateX(-50%);
+  top: 0;
+}
