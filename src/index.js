@@ -113,28 +113,29 @@ const showVideo = (id) => {
     framesCount: seqCount[id],
     framesFolder: `/static/${id}`,
     fps: 15,
+    onLoad: () => {
+      descriptions[id].forEach((description) => {
+        const button = new QuestionButton(description);
+        questionButtons.push(button);
+    
+        wrapper.appendChild(button?.question);
+    
+        const questionInDOM = document.getElementById(`question-${description.id}`);
+        
+        questionInDOM.addEventListener("click", () => {
+          modal.innerHTML = modalLayout(description);
+          modal.classList.toggle("hidden");
+    
+          timeline.pause();
+    
+          modal.addEventListener("click", closeModal);
+          document.addEventListener("keydown", closeModal);
+        });
+      });
+    }
   });
 
   timeline.init();
-
-  descriptions[id].forEach((description) => {
-    const button = new QuestionButton(description);
-    questionButtons.push(button);
-
-    wrapper.appendChild(button?.question);
-
-    const questionInDOM = document.getElementById(`question-${description.id}`);
-    
-    questionInDOM.addEventListener("click", () => {
-      modal.innerHTML = modalLayout(description);
-      modal.classList.toggle("hidden");
-
-      timeline.pause();
-
-      modal.addEventListener("click", closeModal);
-      document.addEventListener("keydown", closeModal);
-    });
-  });
 };
 
 const closeVideo = () => {

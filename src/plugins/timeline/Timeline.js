@@ -24,6 +24,7 @@ export default class Timeline {
       framesCount,
       framesFolder,
       fps,
+      onLoad = () => {},
     }) {
     this.containerId = containerId;
     this.namePattern = namePattern;
@@ -31,6 +32,7 @@ export default class Timeline {
     this.framesCount = framesCount;
     this.framesFolder = framesFolder;
     this.fps = fps;
+    this.onLoad = onLoad;
   }
 
   init() {
@@ -75,6 +77,7 @@ export default class Timeline {
       this.progressBar.remove();
       this.loadingStatus.remove();
       this.play();
+      this.onLoad();
     }
   }
 
