@@ -23,7 +23,7 @@ export default class Timeline {
       fileExtension,
       framesCount,
       framesFolder,
-      fps
+      fps,
     }) {
     this.containerId = containerId;
     this.namePattern = namePattern;
@@ -131,6 +131,5 @@ export default class Timeline {
 
   destroy() {
     document.getElementById(this.containerId).innerHTML = "";
-    clearInterval(this.interval);
   }
 }

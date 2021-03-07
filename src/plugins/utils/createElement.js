@@ -1,0 +1,1 @@
+export const createElement = (str) => document.createRange().createContextualFragment(str);

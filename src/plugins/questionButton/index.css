@@ -1,0 +1,32 @@
+.question-wrapper {
+  position: absolute;
+  display: inline-block;
+  background-color: rgba(98, 95, 104, 0.5);
+  border: 1px solid black;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.question-wrapper {
+  cursor: pointer;
+}
+
+.question {
+  color: #ffff;
+  font-weight: bold;
+}
+
+.above-object {
+  top: 55px;
+  left: 300px;
+}
+
+.right-corner {
+  right: 70px;
+  bottom: 65px;
+}
+
+.next-to-object {
+  top: 180px;
+  right: 140px;
+}
