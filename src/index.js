@@ -59,8 +59,7 @@ const descriptions = {
     {
       id: 1,
       title: "Types of Fuels",
-      content: `<p>Fuels are substances that produce heat and energy when they burn. There are solid fuels (such as wood and charcoal), liquid fuels (such as kerosene and diesel), and gaseous fuels (such as natural gas and propane).",
-      positionClass: "above-object</p>`,
+      content: `<p>Fuels are substances that produce heat and energy when they burn. There are solid fuels (such as wood and charcoal), liquid fuels (such as kerosene and diesel), and gaseous fuels (such as natural gas and propane).</p>`,
       positionClass: "above-object",
     },
     {
