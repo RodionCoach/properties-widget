@@ -67,8 +67,8 @@ const descriptions = {
       title: "Chemical Properties of Fuel",
       content: `
     <ul>
-      <li>Physical sunscreen applied on top of the skin acts as a barrier to the skin and reflects sunrays, protecting the skin from the damage of UV light.</li>
-      <li>Chemical sunscreen absorbs the UV rays before they enter the skin and damage it.</li>
+      <li>Flammability: The ability of fuels to burn and produce heat and energy</li>
+      <li>When fuels burn, they release energy to the surroundings in exothermic reactions.</li>
     </ul>`,
       positionClass: "next-to-object",
     },
